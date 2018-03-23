@@ -16,10 +16,11 @@ struct DoublesQueue
     Node*rear;
 };
 void enqueue( DoublesQueue &queue ,double data ) // if char data will be char data
-{
+{  Node*oldNode = queue.rear ;
    Node*newNode = new Node ;
   newNode -> data = data ;
-  newNode -> Next = queue.rear;
+  oldNode->Next = newNode ;
+  newNode -> Next = nullptr ;
    queue.rear = newNode ;
   
 }
