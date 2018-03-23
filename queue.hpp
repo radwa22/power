@@ -1,3 +1,9 @@
+
+
+namespace queue 
+{
+
+
 //using linked list
 struct Node 
 {
@@ -57,4 +63,5 @@ void clear( DoublesQueue &queue )
         current = current -> Next  ;
         delete current ;
     }
+}
 }
