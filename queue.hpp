@@ -19,8 +19,8 @@ void enqueue( DoublesQueue &queue ,double data ) // if char data will be char da
 {
    Node*newNode = new Node ;
   newNode -> data = data ;
-  newNode -> Next = queue.front;
-   queue.front = newNode ;
+  newNode -> Next = queue.rear;
+   queue.rear = newNode ;
   
 }
 int dequeue( DoublesQueue &queue )
