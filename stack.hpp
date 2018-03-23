@@ -55,4 +55,23 @@ struct stackll
     Node *front = nullptr;
  };
 
+ void push( stackll &Stack , int data )
+ {
+     Node*NEW = new Node ;
+       NEW -> data = data ;
+       NEW -> next = Stack.front ;
+       Stack.front = NEW ;
+ }
+ int pop (stackll&Stack)
+ {
+    Node * current = Stack.front ;
+    return current -> data ;
+
+ }
+ bool isEmpty(stackll &Stack )
+ {
+     return (Stack.front ==nullptr);
+ }
+
+
 }
