@@ -90,8 +90,12 @@ int front( IntegersLL &list )
 }
 int back( IntegersLL &list )
 {
-  Node*back = list.head ;
-  return back -> data ;
+  Node*current= list.head ;
+  while (current != nullptr)
+  {
+    current = current -> Next ;
+  }
+  return current -> data ;
 }
 void removeAt( IntegersLL &list , int index )
 {
