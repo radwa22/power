@@ -142,6 +142,16 @@ void printAll( IntegersLL &list )
         i++ ;
     }
 }
+
+void clear(IntegersLL &list)
+{ 
+    Node*current = list.head ;
+    while (current != nullptr)
+    {
+        current = current -> Next  ;
+        delete current ;
+    }
+}
 }
 
 #endif
