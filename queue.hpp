@@ -39,7 +39,7 @@ int front( DoublesQueue &queue )
 
 bool isEmpty( DoublesQueue &queue )
 {   
-  return (queue.front == nullptr) ;
+  return (queue.front ==queue.rear ) ;
 }
 
 int size( DoublesQueue &queue )
